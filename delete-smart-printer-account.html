@@ -20,115 +20,177 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-
-        .main-wrapper {
-            height: 100vh !important;
-        }
-
-        /* main-heading styling */
-        .ist-heading {
-            font-weight: 700;
-            font-size: 37.54px;
-            line-height: 56.31px;
-        }
-
-        /* description */
-        .description {
-            font-weight: 400;
-            /* font-size: 19.71px; */
-            line-height: 29.56px;
-        }
-
-
-        .sec-heading {
-            font-weight: 700;x
-            font-size: 25.34px;
-            line-height: 38.01px;
-            background-color: #DB1C26;
-            display: inline-block;
-            margin: 0 auto;
-            color: white;
-            padding: 10px 15px;
-        }
-
-        /* links-buttons */
-        .links-buttons p {
-            font-weight: 500;
-            font-size: 22.52px;
-            line-height: 33.79px;
-
-        }
-
-
-   /* ======= Responsive ====== */
-
-   @media screen and (max-width: 600px) {
-
-body {
-        padding-top: 2rem;
-        /* padding: 1rem; */
-    }
-
-.container {
-        height: 100vh;
-        text-align: center;
-   }
-
-.sec-heading {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 38.01px;
-    background-color: #DB1C26;
-    color: white;
-    /* border-radius: 10px; */
-    padding: 10px 15px;
+        
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f8fc;
 }
 
-.anchors {
-    margin-top: 1.2rem;
+.card{
+    transition:.3s;
 }
 
-.img-fluid {
-    margin-top: 2.2rem;
-    margin-bottom: 1.2rem;
-    /* padding: 1rem; */
-}
-.container p {
-    padding: 1rem;
-    text-align: center;
-}
-.container p br {
-
-    display: none;
+.card:hover{
+    transform:translateY(-5px);
 }
 
-.links-buttons {
-    align-self: center;
+img{
+    border:1px solid #ececec;
 }
-   }
+
+.alert{
+    border:none;
+}
+
+.display-4{
+    color:#1f2140;
+}
+
+h3,h5{
+    color:#23204d;
+}
+
+.text-muted{
+    font-size:16px;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.display-4{
+    font-size:2.3rem;
+}
+
+.card-body{
+    padding:25px !important;
+}
+
+}
+      
+
     </style>
 </head>
-<body>
-    <div class="container main-wrapper">
-        <div class="row vh-100 ">
-            <!-- ===== left portion ==== -->
-            <div class="col-md-7 col-sm-12  d-flex flex-column gap-4 text-center justify-content-center ">
-                <!-- ist heading -->
-                <h1 class="ist-heading ">Smart Printer</h1>
-                <!-- 2st heading -->
-                <h3 class="sec-heading">HOW TO DELETE ACCOUNT</h3>
-                <!-- Last Paragraph -->
-                <p>At Smart Printer, we understand that circumstances change, and your privacy is important to us. If you wish to permanently delete your account, please follow the steps mentioned in the screenshots
-                </p>
+<body style="background:#f7f8fc;">
+
+<div class="container py-5">
+
+    <!-- Hero -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-dark">
+            Smart Printer
+        </h1>
+
+        <div class="d-inline-block px-4 py-2 rounded-pill mt-3"
+             style="background:#DB1C26;color:white;font-weight:600;">
+            Delete Your Account
+        </div>
+
+        <p class="mt-4 text-secondary mx-auto" style="max-width:700px;font-size:18px;">
+            Your privacy is important to us. If you no longer wish to use Smart Printer,
+            you can permanently delete your account directly from the app.
+            Please follow the steps below.
+        </p>
+    </div>
+
+    <!-- Information Card -->
+    <div class="card border-0 shadow-lg rounded-4 mb-5">
+        <div class="card-body p-5">
+
+            <h3 class="fw-bold mb-4">
+                How to Delete Your Account
+            </h3>
+
+            <div class="row g-4">
+
+                <!-- Step 1 -->
+                <div class="col-lg-6">
+
+                    <div class="p-4 rounded-4 h-100"
+                        style="background:#f8f9ff;">
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-danger text-white d-flex justify-content-center align-items-center"
+                                style="width:45px;height:45px;font-weight:bold;">
+                                1
+                            </div>
+
+                            <h5 class="ms-3 mb-0 fw-bold">
+                                Open Your Profile
+                            </h5>
+                        </div>
+
+                        <p class="text-muted">
+                            Navigate to <strong>My Profile</strong> and scroll to
+                            the bottom of the page. Tap the
+                            <strong>Delete Account</strong> button.
+                        </p>
+
+                        <img
+                            src="smart_printer_assets/step1.png"
+                            class="img-fluid rounded-4 shadow"
+                            alt="Step 1">
+
+                    </div>
+
+                </div>
+
+                <!-- Step 2 -->
+
+                <div class="col-lg-6">
+
+                    <div class="p-4 rounded-4 h-100"
+                        style="background:#f8f9ff;">
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-danger text-white d-flex justify-content-center align-items-center"
+                                style="width:45px;height:45px;font-weight:bold;">
+                                2
+                            </div>
+
+                            <h5 class="ms-3 mb-0 fw-bold">
+                                Confirm Deletion
+                            </h5>
+                        </div>
+
+                        <p class="text-muted">
+                            A confirmation dialog will appear. Tap
+                            <strong>Delete Account</strong> again to permanently
+                            remove your account and all associated data.
+                        </p>
+
+                        <img
+                            src="smart_printer_assets/step2.png"
+                            class="img-fluid rounded-4 shadow"
+                            alt="Step 2">
+
+                    </div>
+
+                </div>
+
             </div>
 
-             <!-- ===== right portion ==== -->
-            <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center ">
-                <img src="https://fundraiser.codematics.co/assets/images/delete-account-image.svg" alt="delete account image" class="img-fluid">
-            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Warning -->
+
+    <div class="alert alert-danger rounded-4 shadow-sm p-4">
+
+        <h5 class="fw-bold mb-3">
+            ⚠ Important
+        </h5>
+
+        <ul class="mb-0">
+            <li>Your account will be permanently deleted.</li>
+            <li>Your fax history will be removed.</li>
+            <li>Your purchased tokens will be deleted.</li>
+            <li>Your personal fax number (if assigned) will be removed.</li>
+            <li>This action cannot be undone.</li>
+        </ul>
+
+    </div>
+
+</div>
+
 </body>
 </html>
-
